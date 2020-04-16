@@ -38,7 +38,14 @@ class PhoneController extends Controller
                 'validation_response' => $e,
             ], 200);
         }
-        return Phone::findOrFail($request->input('phone_id'));
+        $phone = Phone::find($request->input('phone_id'));
+        if (!empty($phone))
+            return $phone;
+        else {
+            return response()->json([
+                'status' => 'not found',
+                'id' => $request->input('phone_id')]);
+        }
     }
 
     /**
