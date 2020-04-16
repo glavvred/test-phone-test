@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @property mixed id
  * @property mixed name
+ * @property mixed phone
  */
 class Phone extends Model
 {

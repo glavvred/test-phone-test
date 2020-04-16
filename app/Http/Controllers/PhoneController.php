@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Phone;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;
@@ -42,7 +41,7 @@ class PhoneController extends Controller
         }
         $contact = new Phone();
         $contact->name = $request->input('name');
-        $contact->name = $request->input('phone');
+        $contact->phone = $request->input('phone');
         $contact->save();
 
         return response()->json([
