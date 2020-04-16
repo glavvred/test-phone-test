@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Phone extends Model
 {
+    protected $primaryKey = 'phone_id';
+
     protected $fillable = ['name', 'phone'];
 
     protected $hidden = ['created_at', 'updated_at'];
