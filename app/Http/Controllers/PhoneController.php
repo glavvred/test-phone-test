@@ -83,11 +83,27 @@ class PhoneController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param Phone $phone
+     * @param Request $request
      * @return Response
      */
-    public function destroy(Phone $phone)
+    public function delete(Request $request)
     {
-        //
+        try {
+            $this->validate($request, [
+                'phone_id' => 'required|integer',
+            ]);
+        } catch (ValidationException $e) {
+            return response()->json(['status' => 'error',
+                'message' => 'validation_error',
+                'validation_response' => $e,
+            ], 200);
+        }
+
+        $contact = Phone::findOrFail($request->input('phone_id'));
+        $contact->delete();
+
+        return response()->json([
+            'status' => 'success',
+            'id' => $contact->id]);
     }
 }
