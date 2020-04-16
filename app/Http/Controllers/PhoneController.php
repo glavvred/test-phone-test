@@ -33,7 +33,7 @@ class PhoneController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return Response
      */
     public function store(Request $request)
@@ -44,7 +44,7 @@ class PhoneController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Phone  $phone
+     * @param Phone $phone
      * @return Response
      */
     public function show(Phone $phone)
@@ -55,7 +55,7 @@ class PhoneController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Phone  $phone
+     * @param Phone $phone
      * @return Response
      */
     public function edit(Phone $phone)
@@ -66,8 +66,8 @@ class PhoneController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Phone  $phone
+     * @param Request $request
+     * @param Phone $phone
      * @return Response
      */
     public function update(Request $request, Phone $phone)
@@ -78,7 +78,7 @@ class PhoneController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Phone  $phone
+     * @param Phone $phone
      * @return Response
      */
     public function destroy(Phone $phone)
