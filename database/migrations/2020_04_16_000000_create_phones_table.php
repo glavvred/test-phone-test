@@ -14,7 +14,7 @@ class CreatePhonesTable extends Migration
     public function up()
     {
         Schema::create('phones', function (Blueprint $table) {
-            $table->id('phone_id')->autoIncrement();
+            $table->increments('phone_id')->unsigned();
             $table->string('phone')->default('+7');
             $table->string('name')->default('');
             $table->timestamps();
