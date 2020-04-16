@@ -21,6 +21,27 @@ class PhoneController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @param Request $request
+     * @return Phone[]|Collection
+     */
+    public function get(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'phone_id' => 'required|integer',
+            ]);
+        } catch (ValidationException $e) {
+            return response()->json(['status' => 'error',
+                'message' => 'validation_error',
+                'validation_response' => $e,
+            ], 200);
+        }
+        return Phone::findOrFail($request->input('phone_id'));
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @param Request $request
