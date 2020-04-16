@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Phone;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Validation\ValidationException;
 
 class PhoneController extends Controller
 {
@@ -16,18 +18,30 @@ class PhoneController extends Controller
      */
     public function index()
     {
-        var_dump(env('DB_HOST') );
         return Phone::all();
     }
 
     /**
      * Show the form for creating a new resource.
      *
+     * @param Request $request
      * @return Response
      */
     public function create(Request $request)
     {
-        $id = Phone::create($request->validated());
+        try {
+            $this->validate($request, [
+                'phone' => 'required|string',
+                'name' => 'required|string',
+            ]);
+        } catch (ValidationException $e) {
+            return response()->json(['status' => 'error',
+                'message' => 'validation_error',
+                'validation_response' => $e,
+            ], 200);
+        }
+        $id = new Phone(['name' => $request->input('name'), 'phone' => $request->input('phone')]);
+        return response()->json(['id' => $id]);
     }
 
     /**
