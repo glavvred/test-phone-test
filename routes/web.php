@@ -17,4 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::apiResource('phones', 'PhoneController');
+Route::prefix('phone')->group(function () {
+    Route::get('/list', 'PhoneController@index');
+    Route::get('/get', 'PhoneController@get');
+    Route::get('/create', 'PhoneController@create');
+    Route::get('/update', 'PhoneController@update');
+    Route::get('/delete', 'PhoneController@delete');
+});
