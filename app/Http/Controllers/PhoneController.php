@@ -40,8 +40,10 @@ class PhoneController extends Controller
                 'validation_response' => $e,
             ], 200);
         }
-        $id = new Phone(['name' => $request->input('name'), 'phone' => $request->input('phone')]);
-        return response()->json(['id' => $id]);
+        $phone = new Phone(['name' => $request->input('name'), 'phone' => $request->input('phone')]);
+        $phone->save();
+
+        return response()->json(['id' => $phone->id]);
     }
 
     /**
