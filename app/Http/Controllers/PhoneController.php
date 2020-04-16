@@ -3,35 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Phone;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class PhoneController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Phone[]|Collection
      */
     public function index()
     {
-        //
+        return Phone::all();
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $id = Phone::create($request->validated());
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function store(Request $request)
     {
@@ -42,7 +44,7 @@ class PhoneController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Phone  $phone
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function show(Phone $phone)
     {
@@ -53,7 +55,7 @@ class PhoneController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Phone  $phone
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit(Phone $phone)
     {
@@ -65,7 +67,7 @@ class PhoneController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Phone  $phone
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update(Request $request, Phone $phone)
     {
@@ -76,7 +78,7 @@ class PhoneController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Phone  $phone
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy(Phone $phone)
     {
