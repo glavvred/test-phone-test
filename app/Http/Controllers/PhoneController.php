@@ -16,6 +16,7 @@ class PhoneController extends Controller
      */
     public function index()
     {
+        var_dump(env('DB_HOST') );
         return Phone::all();
     }
 
