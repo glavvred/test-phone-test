@@ -5,6 +5,7 @@
       <mapping pattern="docker-compose" type="PLAIN_TEXT" />
       <mapping pattern="artisan" type="PLAIN_TEXT" />
       <mapping pattern="Procfile" type="PLAIN_TEXT" />
+      <mapping pattern="0days" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
