@@ -12,6 +12,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="0bf59cd9-5b13-49f8-b775-62666943143e" name="auditarium" url="http://134.122.86.48">
+        <fileTransfer host="134.122.86.48" port="22" privateKey="C:\Users\rabot\.ssh\auditarium.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
