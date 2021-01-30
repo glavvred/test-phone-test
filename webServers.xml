@@ -4,6 +4,14 @@
       <webServer id="f671b3b6-0710-4aa8-a255-360fa756db3a" name="psi" url="http://localhost">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="55130dd2-4c91-4b19-8c6c-d850fe6581c1" name="auditarium" url="http://auditarium.ru">
+        <fileTransfer host="auditarium.ru" port="22" privateKey="C:\Users\rabot\.ssh\id_rsa.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
