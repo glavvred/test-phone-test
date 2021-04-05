@@ -2,7 +2,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="f671b3b6-0710-4aa8-a255-360fa756db3a" name="psi" url="http://localhost">
-        <fileTransfer port="0" accessType="LOCAL" />
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+      <webServer id="5720b207-7335-4b5c-b657-6569a9c22937" name="82.196.2.197" url="http://82.196.2.197">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="82.196.2.197" port="22" sshConfigId="101215ff-54e8-40fd-8629-27416647b001" sshConfig="root@82.196.2.197:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
       </webServer>
     </option>
   </component>

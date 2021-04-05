@@ -1,0 +1,7 @@
+<application>
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="82.196.2.197" id="101215ff-54e8-40fd-8629-27416647b001" keyPath="C:\Users\rabot\.ssh\id_rsa.ppk" port="22" nameFormat="DESCRIPTIVE" username="root" />
+    </configs>
+  </component>
+</application>
