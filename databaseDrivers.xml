@@ -9,7 +9,7 @@
       <artifact id="MySQL Connector/J 8" name="MySQL Connector/J 8" use="true" />
     </driver>
     <driver id="postgresql">
-      <artifact id="PostgreSQL" name="PostgreSQL" channel="fixed" rolling="false" use="true" version="42.2.2" />
+      <artifact id="PostgreSQL" name="PostgreSQL" channel="fixed" rolling="false" use="true" version="9.4.1212" />
     </driver>
   </component>
 </application>
