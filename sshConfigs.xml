@@ -2,6 +2,9 @@
   <component name="SshConfigs">
     <configs>
       <sshConfig host="82.196.2.197" id="101215ff-54e8-40fd-8629-27416647b001" keyPath="C:\Users\rabot\.ssh\id_rsa.ppk" port="22" nameFormat="DESCRIPTIVE" username="root" />
+      <sshConfig host="51.250.15.250" id="32e13b23-177b-45cb-ad3b-096dca117484" keyPath="C:\Users\rabot\.ssh\id_rsa.ppk" port="22" customName="mbilling@51.250.15.250" nameFormat="CUSTOM" username="mbilling">
+        <option name="customName" value="mbilling@51.250.15.250" />
+      </sshConfig>
     </configs>
   </component>
 </application>

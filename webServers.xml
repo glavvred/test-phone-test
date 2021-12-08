@@ -11,6 +11,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="ca9b6925-f253-493a-bef0-feb4cf6973b5" name="remittance_new_symfony" url="http://test.mbilling.one">
+        <fileTransfer rootFolder="/var/www/lk.mbilling.one" accessType="SFTP" host="51.250.15.250" port="22" sshConfigId="32e13b23-177b-45cb-ad3b-096dca117484" sshConfig="mbilling@51.250.15.250" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
