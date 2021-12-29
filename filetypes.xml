@@ -11,6 +11,7 @@
       <mapping pattern="artisan" type="PLAIN_TEXT" />
       <mapping pattern="docker-compose" type="PLAIN_TEXT" />
       <mapping ext="dist" type="PLAIN_TEXT" />
+      <mapping ext="xlf" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
