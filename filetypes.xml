@@ -10,6 +10,7 @@
       <mapping pattern="0days" type="PLAIN_TEXT" />
       <mapping pattern="artisan" type="PLAIN_TEXT" />
       <mapping pattern="docker-compose" type="PLAIN_TEXT" />
+      <mapping ext="yaml__" type="PLAIN_TEXT" />
       <mapping ext="dist" type="PLAIN_TEXT" />
       <mapping ext="xlf" type="PLAIN_TEXT" />
     </extensionMap>
