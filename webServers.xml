@@ -19,7 +19,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="a5ff1886-4291-46f9-8833-12f032beff0a" name="ezy_moni" url="http://low.mbilling.one">
-        <fileTransfer rootFolder="/var/www" accessType="SFTP" host="51.250.15.250" port="22" sshConfigId="32e13b23-177b-45cb-ad3b-096dca117484" sshConfig="mbilling@51.250.15.250" keyPair="true">
+        <fileTransfer rootFolder="/var/www" accessType="SFTP" host="84.201.144.56" port="22" sshConfigId="c58c6b2b-224f-4a4f-b3d4-a0f057271b06" sshConfig="ezy" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
