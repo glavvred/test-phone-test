@@ -9,6 +9,9 @@
       <sshConfig host="84.201.144.56" id="c58c6b2b-224f-4a4f-b3d4-a0f057271b06" keyPath="C:\Users\rabot\.ssh\id_rsa.ppk" port="22" customName="ezy" nameFormat="CUSTOM" username="mbilling">
         <option name="customName" value="ezy" />
       </sshConfig>
+      <sshConfig host="130.193.35.69" id="72540e61-37a6-4210-9eda-6a97e79ed33d" keyPath="C:\Users\rabot\.ssh\id_rsa.ppk" port="22" customName="mbilling@old-db" nameFormat="CUSTOM" username="mbilling">
+        <option name="customName" value="mbilling@old-db" />
+      </sshConfig>
     </configs>
   </component>
 </application>
